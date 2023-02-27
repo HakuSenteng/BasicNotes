@@ -1,9 +1,14 @@
+import javax.sound.sampled.SourceDataLine;
+
 public class FirstSteps {
+    char letra = 'A';
+    /*Variables in "char" are just one letter
+    */
     byte small = 10;
     /*Variables in "byte" have a range of -128 to 127. 
      *Only goes for integer numbers.
      */
-    short medium = 10000;
+     short medium = 10000;
     /*Variables in "short" have a range of -32768 to 32767 
      * and also only goes for integer numbers.
      */
@@ -31,4 +36,16 @@ public class FirstSteps {
     String[] armario = {"Willian", "Nascimento", "Silva"};
     /*Array works like a cabinet that can be accessed by the position where it is, starting with 0.
     */
+    private String readArray(int index){
+        System.out.println("element: " + this.armario[index]);
+        return this.armario[index];    
+    }
+    
+    public String readArrayWithValidation(int index){
+        if(index >= 0 && index <= (this.armario.length -1)){
+            return this.readArray(index);
+        };
+        return "Não existe";
+    }
+    
 }
