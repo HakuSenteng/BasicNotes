@@ -17,11 +17,18 @@ public class FirstSteps {
      */
     float evenBigger = 10000000000000.5f;
     /*Variables in "float" have a range of 1.4 E-45 to more than 3.4 E+38
-     * In "float" we can use floating-point numbers like 1,5
+     * In "float" we can use floating-point numbers like 1,5.
       */
     double biggest = 1.1;
-    /*Variables in "double" have the biggest range and also accepts floating points numbers*/    
+    /*Variables in "double" have the biggest range and also accepts floating points numbers.
+    */    
     boolean trueAndFalse = true;
-    /*Variables in boolean are only true and false */
-
+    /*Variables in boolean are only true and false.
+    */
+    String nome = "50, Willian";
+    /*Variables in "String" can be any character, is basically a text, also the S from String must be in capital.
+    */
+    String[] armario = {"Willian", "Nascimento", "Silva"};
+    /*Array works like a cabinet that can be accessed by the position where it is, starting with 0.
+    */
 }
